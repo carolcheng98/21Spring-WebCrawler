@@ -5,6 +5,7 @@
 `> labelTopics(fit, n = 10)`
 
 Topic Words:
+
  Topic 1: bleach, poop, pee, flush, diaper, mat, toothbrush, pant, peed, glove 
 
  Topic 2: woke, tramadol, chaplain, rub, asleep, awok, nasal, g-tube, bed, pale 
@@ -392,6 +393,7 @@ Topic 20 Top Words:
 `> labelTopics(fit30, n = 10)`
 
 Topic Words:
+
  Topic 1: bleach, pee, poop, flush, diaper, bathroom, toilet, smell, splash, teeth 
 
  Topic 2: woke, shook, tummi, chaplain, g-tube, awok, goodnight, paramed, murmur, gash 
