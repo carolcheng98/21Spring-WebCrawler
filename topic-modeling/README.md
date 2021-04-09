@@ -26,19 +26,30 @@ Topic Words:
  Topic 10: charl, version, medit, weapon, poem, empow, hymn, persever, gift, glorifi 
 
  Topic 11: fundrais, twitter, film, donat, campaign, podcast, audienc, alzheimer<U+2019>, societi, sponsor 
+
  Topic 12: grandfath, resourc, grandmoth, caretak, guidanc, onset, advic, fibromyalgia, atlanta, portland 
+
  Topic 13: facilti, resid, residenti, facil, furnish, staff, reloc, transit, courtyard, tour 
+
  Topic 14: re-post, link, user, compil, vote, mod, fluent, softwar, technolog, featur 
+
  Topic 15: psychosi, seizur, hallucin, antipsychot, risperidon, anesthesia, dosag, psychiatr, prescrib, sedat 
+
  Topic 16: aunti, elementari, cousin, uncl, remarri, marri, fianc, nana, vow, divorc 
+
  Topic 17: teepa, aftermath, speaker, hurrican, snow, notebook, seminar, flame, connecticut, feil 
+
  Topic 18: uber, babysitt, paycheck, m-f, daycar, afford, part-tim, wage, errand, hire 
+
  Topic 19: bittersweet, snuggl, reunit, mourn, good-by, brave, goodby, uncondit, gorgeous, smile 
+
  Topic 20: gel, stage, seem, last, past, wonder, year, long, month, ago 
+
+
 
  Covariate Words:
  Group Alzconnected: necess, dayi, sooooo, alzdementia, rethink, soi, inout, sharon, oct, agreeabl 
- Group reddit: apologis, tldr, neighbour, grammar, itd, backstori, someone<U+2019>, unwel, dude, grandma<U+2019> 
+ Group reddit: apologis, tldr, neighbour, grammar, itd, backstori, someone<U+2019>, unwel, dude, grandma
 
  Topic-Covariate Interactions:
  Topic 1, Group Alzconnected: dentist, hoyer, toothpast, bms, comb, rug, dribbl, fold, razor, deterg 
@@ -216,35 +227,66 @@ Topic 20 Top Words:
 
 Topic Words:
  Topic 1: bleach, pee, poop, flush, diaper, bathroom, toilet, smell, splash, teeth 
+
  Topic 2: woke, shook, tummi, chaplain, g-tube, awok, goodnight, paramed, murmur, gash 
+
  Topic 3: louder, gonna, bitch, piss, dunno, mad, goodnight, soo, mesh, cri 
+
  Topic 4: scam, password, scammer, voicemail, account, landlin, caller, text, debit, dial 
+
  Topic 5: jigsaw, tracker, game, fidget, puzzl, gps, movi, solitair, crossword, piano 
+
  Topic 6: medi-c, fee, asset, insur, ssdi, cost, medicaid, coverag, incom, appli 
+
  Topic 7: oxid, neuron, plaqu, amyloid, receptor, nitrat, peroxynitrit, neurotransmitt, mutat, tau 
+
  Topic 8: exploit, abus, domest, sexual, paye, mortgag, conservatorship, alleg, court, notar 
+
  Topic 9: chew, smoke, cigarett, hungri, drink, spoon, bite, slice, oatmeal, mouth 
+
  Topic 10: medit, version, fruit, strive, translat, enemi, poem, marvel, merci, creation 
+
  Topic 11: twitter, mother<U+2019>, custom, outfit, gentleman, inventori, mexico, chemic, weather, escort 
+
  Topic 12: resourc, caretak, pointer, grandmoth, guidanc, advic, toll, volatil, mother--law, appreci 
+
  Topic 13: resid, understaf, staff, wing, facil, facilti, lobbi, quarantin, reloc, cnas 
+
  Topic 14: seatbelt, brake, caffein, hazard, bloodi, gate, instal, ceil, climb, heater 
+
  Topic 15: recoveri, delirium, hospit, outpati, infect, discharg, anesthesia, icu, -patient, sepsi 
+
  Topic 16: elementari, uncl, eldest, aunt, cousin, wive, remarri, aunti, grandchild, brother 
+
  Topic 17: speaker, aftermath, oregon, norm, teepa, snow, connecticut, flame, workshop, western 
+
  Topic 18: rent, paycheck, babysitt, daycar, uber, hire, m-f, vacat, part-tim, contractor 
+
  Topic 19: goodby, cherish, bittersweet, embrac, funer, smile, uncondit, beauti, merri, anniversari 
+
  Topic 20: bedsor, morphin, restless, bedridden, suction, skin, reposit, breath, zombi, wound 
+
  Topic 21: rapid, sentenc, decay, unintellig, gibberish, vocabulari, plateau, speech, facial, steadili 
+
  Topic 22: paus, dodg, pic, enlarg, imag, photograph, starter, district, reson, insert 
+
  Topic 23: mod, edit, delet, scroll, titl, kindl, curious, format, boo, perspect 
+
  Topic 24: stalk, confabul, misplac, stolen, conspiraci, hairdress, illog, accus, ignit, gaslight 
+
  Topic 25: cat, dog, growl, pet, scrap, anim, vet, puppi, practic, adopt 
+
  Topic 26: fundrais, project, survey, platform, featur, nonprofit, sponsor, publish, compil, technolog 
+
  Topic 27: crippl, guilt, bleak, selfish, revolv, guilti, helpless, hatr, unfair, tunnel 
+
  Topic 28: dad, hes, sport, parent, hell, concuss, hed, leaf, guy, wors 
+
  Topic 29: psychosi, memantin, prescrib, neurologist, antipsychot, mirtazapin, referr, patch, prednison, specialist 
+
  Topic 30: snippet, upcom, now, anyon, dementia, thank, thing, know, see, seem 
+
+
 
  Covariate Words:
  Group Alzconnected: sooooo, fabul, alzdementia, auction, rear, againi, buck, soooooo, resum, sharon 
@@ -346,152 +388,301 @@ Topic Words:
 `> labelTopics(selected30, n = 10)`
 
 Topic 1 Top Words:
+
  	 Highest Prob: care, servic, provid, health, state, medic, inform, social, medicaid, elder 
+
  	 FREX: medicar, medicaid, cost, servic, program, document, agenc, polici, healthcar, elder 
+
  	 Lift: fiduciari, qualif, polici, ssdi, coverag, healthcar, deduct, rep, org, proxi 
+
  	 Score: medicaid, attorney, servic, medicar, medic, provid, care, cost, insur, program 
+
 Topic 2 Top Words:
+
  	 Highest Prob: med, medic, take, behavior, agit, increas, anxieti, pill, tri, hallucin 
+
  	 FREX: hallucin, agit, psych, med, seroquel, episod, behavior, pill, prescrib, namenda 
+
  	 Lift: anti, anti-psychot, exelon, geri-psych, zyprexa, depakot, excelon, lexapro, paxil, psych 
+
  	 Score: med, medic, behavior, seroquel, agit, psych, dose, prescrib, hallucin, aricept 
+
 Topic 3 Top Words:
+
  	 Highest Prob: mother, father, wife, becom, mental, howev, believ, due, health, situat 
+
  	 FREX: mother, wife, father, mental, verbal, abus, becom, howev, ampxb, amp 
+
  	 Lift: stepmoth, wife, mother, illog, coast, step-fath, year-old, father, sober, oversea 
+
  	 Score: mother, father, wife, becom, mental, ampxb, abus, amp, health, due 
+
 Topic 4 Top Words:
+
  	 Highest Prob: post, read, share, mani, may, mil, use, word, other, learn 
+
  	 FREX: post, mil, read, board, share, thread, topic, fil, book, connect 
+
  	 Lift: avatar, firefox, zolli, thread, alzconnect, kindl, essay, linda, johanna, delet 
+
  	 Score: post, read, mil, share, book, board, forum, fil, thread, learn 
+
 Topic 5 Top Words:
+
  	 Highest Prob: don<U+2019>t, know, just, <U+2019>ve, can<U+2019>t, rememb, doesn<U+2019>t, thing, think, mum 
+
  	 FREX: don<U+2019>t, <U+2019>ve, can<U+2019>t, doesn<U+2019>t, didn<U+2019>t, <U+2019>re, <U+2019>ll, won<U+2019>t, mum, isn<U+2019>t 
+
  	 Lift: <U+2019>ll, <U+2019>re, <U+2019>ve, <U+201C>well, aren<U+2019>t, can<U+2019>t, home<U+201D>, husband<U+2019>, isn<U+2019>t, nan 
+
  	 Score: don<U+2019>t, <U+2019>ve, can<U+2019>t, doesn<U+2019>t, alzheimer<U+2019>, didn<U+2019>t, <U+2019>ll, mum, <U+2019>re, won<U+2019>t 
+
 Topic 6 Top Words:
+
  	 Highest Prob: time, day, week, take, come, everi, hour, work, get, now 
+
  	 FREX: day, time, everi, hour, week, weekend, come, least, spend, coupl 
+
  	 Lift: weekend, day, everi, hrs, daycar, hour, time, weekday, exhaust, week 
+
  	 Score: day, week, time, hour, everi, come, work, take, spend, weekend 
+
 Topic 7 Top Words:
+
  	 Highest Prob: love, life, feel, one, much, mani, diseas, sad, die, end 
+
  	 FREX: life, emot, sad, wish, journey, guilt, grate, truli, grief, death 
+
  	 Lift: grief, regret, griev, reunit, grate, bittersweet, journey, condol, emot, sadden 
+
  	 Score: love, life, feel, sad, diseas, emot, die, journey, wish, happi 
+
 Topic 8 Top Words:
+
  	 Highest Prob: look, room, walk, sit, hand, watch, around, littl, eye, dog 
+
  	 FREX: dog, cat, laugh, babi, eye, funni, hand, smile, stare, room 
+
  	 Lift: cat, dog, hum, puppi, kitten, mutter, doll, laugh, shook, ceil 
+
  	 Score: room, dog, sit, eye, walk, cat, laugh, look, smile, watch 
+
 Topic 9 Top Words:
+
  	 Highest Prob: help, caregiv, thank, famili, advic, support, anyon, suggest, appreci, great 
+
  	 FREX: caregiv, support, appreci, thank, hello, advic, help, group, great, advanc 
+
  	 Lift: byte, youtubecoverpicsmallpng, ken, long-dist, mid-stag, giver, support, caregiv, appreci, hello 
+
  	 Score: caregiv, help, support, thank, famili, advic, appreci, group, hello, suggest 
+
 Topic 10 Top Words:
+
  	 Highest Prob: live, sister, husband, year, away, parent, famili, friend, daughter, old 
+
  	 FREX: sister, kid, husband, daughter, parent, sibl, marri, children, son, school 
+
  	 Lift: youngest, eldest, grandchildren, great-grandchildren, kid, marri, sister, hometown, son--law, marriag 
+
  	 Score: sister, husband, live, parent, year, daughter, kid, son, sibl, children 
+
 Topic 11 Top Words:
+
  	 Highest Prob: dont, know, shes, cant, doesnt, think, ive, just, even, like 
+
  	 FREX: shes, cant, doesnt, dont, ive, isnt, that, wont, shell, weve 
+
  	 Lift: shell, shes, theyr, theyll, what, isnt, cant, doesnt, weve, ive 
+
  	 Score: shes, doesnt, dont, cant, ive, wont, know, rememb, isnt, that 
+
 Topic 12 Top Words:
+
  	 Highest Prob: thing, play, like, dinner, one, put, food, cook, use, make 
+
  	 FREX: game, fridg, cooki, coffe, photo, glass, bottl, restaur, color, play 
+
  	 Lift: butter, peanut, ham, homemad, onion, pasta, sew, shelv, steak, fridg 
+
  	 Score: food, dinner, kitchen, music, play, cook, game, store, buy, coffe 
+
 Topic 13 Top Words:
+
  	 Highest Prob: dementia, peopl, person, experi, anyon, can, might, like, often, stori 
+
  	 FREX: dementia, peopl, experi, person, similar, relat, event, engag, interact, awar 
+
  	 Lift: introvert, curious, engag, smartphon, familyfriend, problemat, interact, similar, vaccin, dementia 
+
  	 Score: dementia, peopl, experi, person, anyon, relat, similar, stori, often, activ 
+
 Topic 14 Top Words:
+
  	 Highest Prob: mom, want, just, know, see, realli, think, like, good, feel 
+
  	 FREX: mom, want, guess, realli, mayb, better, see, awhil, just, wonder 
+
  	 Lift: momi, sheri, mom, crappi, hmmm, yall, thisi, fiblet, awhil, guess 
+
  	 Score: mom, want, just, know, realli, feel, see, guess, think, mayb 
+
 Topic 15 Top Words:
+
  	 Highest Prob: night, eat, sleep, bed, get, food, drink, feed, morn, wake 
+
  	 FREX: drink, bed, swallow, wake, awak, asleep, feed, sleep, eat, teeth 
+
  	 Lift: chew, miralax, awak, dentur, sleeper, laxat, tilt, drink, pud, swallow 
+
  	 Score: bed, sleep, eat, night, drink, food, chair, feed, swallow, wake 
+
 Topic 16 Top Words:
+
  	 Highest Prob: year, ago, stage, month, diagnos, alzheim, now, last, recent, past 
+
  	 FREX: stage, diagnos, recent, ago, earli, declin, past, progress, year, rapid 
+
  	 Lift: rapid, diagnos, -set, stage, tbi, recent, mid, dimentia, earli, plateau 
+
  	 Score: year, diagnos, stage, ago, alzheim, month, declin, earli, progress, recent 
+
 Topic 17 Top Words:
+
  	 Highest Prob: hospit, nurs, hospic, pain, fall, week, uti, surgeri, rehab, blood 
+
  	 FREX: hospic, antibiot, surgeri, pneumonia, hip, hospit, rehab, fractur, tube, lung 
+
  	 Lift: afib, anesthesia, cipro, congest, esophagus, hospic, pneumonia, potassium, antibiot, clot 
+
  	 Score: hospit, hospic, nurs, pain, uti, rehab, surgeri, antibiot, blood, infect 
+
 Topic 18 Top Words:
+
  	 Highest Prob: will, can, need, work, one, someon, make, find, give, get 
+
  	 FREX: will, need, someon, work, can, find, job, soon, hope, plan 
+
  	 Lift: sht, companion, will, respit, someon, recharg, need, solut, susan, choic 
+
  	 Score: will, need, can, someon, work, find, one, give, job, hope 
+
 Topic 19 Top Words:
+
  	 Highest Prob: doctor, issu, memori, test, diagnosi, appoint, problem, symptom, neurologist, see 
+
  	 FREX: diagnosi, neurologist, test, doctor, symptom, mri, appoint, pcp, scan, specialist 
+
  	 Lift: exam, neuropsych, workup, internist, neuro-psych, mri, pcp, shrinkag, eeg, specialist 
+
  	 Score: doctor, test, neurologist, diagnosi, symptom, appoint, memori, issu, cognit, mri 
+
 Topic 20 Top Words:
+
  	 Highest Prob: hous, drive, leav, car, door, get, away, outsid, home, lock 
+
  	 FREX: car, drive, door, ride, polic, yard, hous, lock, neighbor, key 
+
  	 Lift: mower, furnac, driveway, dmv, truck, dealership, gps, yard, lawn, bike 
+
  	 Score: hous, drive, car, door, lock, key, polic, leav, neighbor, licens 
+
 Topic 21 Top Words:
+
  	 Highest Prob: care, home, move, live, facil, place, nurs, assist, visit, memori 
+
  	 FREX: facil, resid, assist, move, alf, place, staff, unit, independ, care 
+
  	 Lift: facil, resid, ccrc, transit, understaf, alf, turnov, facilti, acclim, livingmemori 
+
  	 Score: facil, home, care, move, nurs, assist, resid, live, staff, place 
+
 Topic 22 Top Words:
+
  	 Highest Prob: god, love, will, lord, peac, pray, bless, give, jesus, good 
+
  	 FREX: god, lord, jesus, spirit, faith, song, momma, pray, peac, joy 
+
  	 Lift: chris, discipl, faith, glori, lyric, philippian, proverb, sin, apostl, bibl 
+
  	 Score: lord, god, jesus, niv, psalm, pray, faith, peac, love, song 
+
 Topic 23 Top Words:
+
  	 Highest Prob: back, got, went, didnt, today, last, took, came, cri, left 
+
  	 FREX: went, got, came, cri, couldnt, wasnt, didnt, kept, mama, today 
+
  	 Lift: wme, daddi, mama, nite, wher, wmama, thur, wthe, sunday, mon 
+
  	 Score: got, went, didnt, mama, back, today, cri, came, took, yesterday 
+
 Topic 24 Top Words:
+
  	 Highest Prob: dad, brother, hes, get, home, take, hell, help, refus, now 
+
  	 FREX: dad, hes, brother, hell, alcohol, hed, girlfriend, plane, florida, agre 
+
  	 Lift: dad, hes, stepmom, brother, girlfriend, lil, plane, hell, hed, sib 
+
  	 Score: dad, hes, brother, hell, get, home, hed, girlfriend, alcohol, refus 
+
 Topic 25 Top Words:
+
  	 Highest Prob: alzheim, diseas, patient, research, brain, studi, may, link, alzheimer<U+2019>, effect 
+
  	 FREX: link, research, survey, amyloid, articl, studi, trial, oil, app, gene 
+
  	 Lift: abstract, aromatherapi, beta, clove, eugenol, ferul, gene, httpwwwncbinlmnihgovpubm, mutat, neuron 
+
  	 Score: alzheim, alzheimer<U+2019>, studi, amyloid, diseas, peroxynitrit, link, research, oxid, ginseng 
+
 Topic 26 Top Words:
+
  	 Highest Prob: get, use, clean, bathroom, shower, help, cloth, put, chang, bath 
+
  	 FREX: shower, bath, toilet, bathroom, wash, dress, clean, cloth, pant, wet 
+
  	 Lift: underwear, bathtub, shower, bleach, fece, panti, pull-up, spong, tub, undi 
+
  	 Score: shower, bathroom, clean, cloth, toilet, bath, wash, dress, wear, floor 
+
 Topic 27 Top Words:
+
  	 Highest Prob: money, pay, poa, take, get, bill, month, financi, account, check 
+
  	 FREX: bank, money, financ, bill, poa, account, sell, accus, rent, pay 
+
  	 Lift: bankruptci, acct, bank, cash, debit, mortgag, foreclosur, loan, rent, debt 
+
  	 Score: money, pay, poa, bill, bank, account, financi, financ, card, lawyer 
+
 Topic 28 Top Words:
+
  	 Highest Prob: say, tri, tell, talk, someth, thing, get, happen, just, noth 
+
  	 FREX: say, upset, tell, talk, wrong, yell, hear, crazi, noth, someth 
+
  	 Lift: idiot, placat, snide, say, argu, yell, deflect, rave, upset, deaf 
+
  	 Score: say, tell, talk, tri, someth, upset, thing, wrong, yell, get 
+
 Topic 29 Top Words:
+
  	 Highest Prob: feel, realli, like, just, grandmoth, bad, grandma, get, wors, aunt 
+
  	 FREX: grandmoth, aunt, grandma, grandfath, grandpa, uncl, honest, grandpar, scare, cousin 
+
  	 Lift: grandmoth, grandfath, grandpa, aunt, uncl, grandpar, matern, grandma, gma, nana 
+
  	 Score: grandma, grandmoth, feel, aunt, grandfath, grandpa, realli, uncl, wors, just 
+
 Topic 30 Top Words:
+
  	 Highest Prob: call, said, told, ask, phone, one, check, wait, offic, answer 
+
  	 FREX: call, phone, said, told, offic, ask, tomorrow, spoke, sent, text 
+
  	 Lift: voicemail, caller, landlin, receptionist, phone, hung, dial, call, saga, spoke 
+
  	 Score: call, said, told, phone, ask, offic, sent, check, text, tomorrow 
