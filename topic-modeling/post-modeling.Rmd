@@ -7,94 +7,139 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
+## Load libraries
 ```{r}
 library(stm)
+library(ggplot2)
+library(tidyverse)
 ```
 
-
+## Preprocess dataset
 ```{r}
-data <- read.csv("alzconnected-data/test_2forum.csv")
+data <- read.csv("stm_0330.csv")
 processed <- textProcessor(data$p_content, metadata = data)
-out <- prepDocuments(processed$documents, processed$vocab, processed$meta) 
+out <- prepDocuments(processed$documents, processed$vocab, processed$meta,lower.thresh=20)
 docs <- out$documents
 vocab <- out$vocab
 meta <-out$meta
 ```
 
+## search K
 ```{r}
-fit <- stm(documents = out$documents, vocab = out$vocab, K = 10, data = out$meta, content =~ fid, prevalence =~ s(year)+ fid)
+storage <- searchK(out$documents, out$vocab, K = c(6,8,10,11,12,14,16,18,20,30), prevalence =~ source, data = meta)
+```
+
+### Plot searchK result
+```{r}
+a <- as.data.frame(lapply(storage$results,unlist)) %>% 
+  transmute(K,
+            `lower bound` = lbound,
+            `Residual` = residual,
+            `Semantic coherence` = semcoh,
+            `Held-out likelihood` = heldout,
+            `em iterations` = em.its,
+            `exclusivity` = exclus) %>%
+  gather(Metric, Value, -K)%>%
+  ggplot(aes(K, Value, color = Metric)) +
+  geom_line(size = 1.5, alpha = 0.7, show.legend = FALSE) +
+  facet_wrap(~Metric, scales = "free_y") +
+  labs(x = "K (number of topics)",
+       y = NULL,
+       title = "Model diagnostics by number of topics")
+
+plot(a)
+```
+or
+```{r}
+plot(storage)
+```
+
+## selectModel
+
+### k = 20
+```{r}
+fit <- stm(documents = out$documents, vocab = out$vocab, K = 20, data = out$meta, content =~ source, prevalence =~ source)
 ```
 
 ```{r}
-sageLabels(fit)
-plot(fit)
+fitselect<-selectModel(out$documents, out$vocab, K = 20, prevalence =~ source, max.em.its = 75,data = out$meta, runs = 20, seed = 8458159)
 ```
 
-## topic metadata relationship
-Topic Words:
- Topic 1: -line, mom, poa, child, diagnos, brother, daughter 
- Topic 2: grant, interview, copi, film, unemploy, gregori, award 
- Topic 3: dose, breath, tension, adrenalin, anywayor, fight--flight, peace<U+201D> 
- Topic 4: transform, acknowledg, tree, doesn<U+2019>t, mundan, spiritu, dust 
- Topic 5: degre, estat, clam, atmospher, accus, spousal, manifest 
- Topic 6: bell, affair, run-away, gone, cancer, happi, pray 
- Topic 7: sensit, post, plus, text, feet, toe, report 
- Topic 8: dessert, heater, moon, song, season, holiday, virtual 
- Topic 9: allaudiencesenglishpdf, customiz, samewhatev, task<U+2014>lik, yield, imageri, intro 
- Topic 10: tele-town, covid-, coronavirus, long-term, aarp, code, finder 
- 
- Covariate Words:
- Group 461: die, knew, ever, wait, even, end, back 
- Group 2147806999: profess, cognit, button, prefer, accompani, develop, term 
- 
- Topic-Covariate Interactions:
- Topic 1, Group 461: buri, ash, grave, flower, hill, cemeteri, funer 
- Topic 1, Group 2147806999: sex, david, teen, suprem, safest, jealous, correspond 
- 
- Topic 2, Group 461: jim, knit, articl, flag, govern, recip, factor 
- Topic 2, Group 2147806999: fee, applic, lgbt, queer, averag, chicago, canada 
- 
- Topic 3, Group 461: palliat, hip, morphin, rehab, daddi, mama, lung 
- Topic 3, Group 2147806999: tomorrow, staf, version, didn<U+2019>t, impair, dementia-rel, donna 
- 
- Topic 4, Group 461: keith, rhoda, psalm, momma, <U+2019>re, dig, deeper 
- Topic 4, Group 2147806999: knit, dishwash, structur, sexual, suprem, pantri, preserv 
- 
- Topic 5, Group 461: sweeti, sis, oldest, mum, jerri, garag, empti 
- Topic 5, Group 2147806999: lesbian, sage, latter, transgend, susan, pantri, indic 
- 
- Topic 6, Group 461: ash, map, sylvia, insignific, snotti, stong, swift 
- Topic 6, Group 2147806999: reput, fals, element, coverag, perceiv, injustic, transgend 
- 
- Topic 7, Group 461: upstair, deb, drawer, size, cloth, donat, scent 
- Topic 7, Group 2147806999: violat, tension, guidelin, tighten, alzconnect, thread, australia 
- 
- Topic 8, Group 461: tart, ornament, tree, red, byte, christma, thanksgiv 
- Topic 8, Group 2147806999: indic, bathtub, conserv, bay, hotlin, dream, sister 
- 
- Topic 9, Group 461: tape, cake, drug, mama, artist, instructor, song 
- Topic 9, Group 2147806999: frank, archiv, reput, marvel, interact, qualifi, warmest 
- 
- Topic 10, Group 461: violat, feedback, thread, mia, pam, impair, simpl 
- Topic 10, Group 2147806999: sage, press, presid, continu, forth, call, beth 
- 
 ```{r}
-out$meta$fid <- as.factor(out$meta$fid)
-prep <- estimateEffect(1:10 ~ fid + s(year), fit,  meta = out$meta, uncertainty = "Global")
+plotModels(fitselect)
+selected20<-fitselect$runout[[2]]
+plot(selected20)
+```
+
+### k = 30
+```{r}
+fit30 <- stm(documents = out$documents, vocab = out$vocab, K = 30, data = out$meta, content =~ source, prevalence =~ source)
+```
+
+```{r}
+fitselect30<-selectModel(out$documents, out$vocab, K = 30, prevalence =~ source, max.em.its = 75,data = out$meta, runs = 20, seed = 8458159)
+```
+
+```{r}
+plotModels(fitselect30)
+selected30 <- fitselect30$runout[[2]]
+sageLabels(selected30)
+```
+
+```{r}
+plot(selected30)
+```
+## Estimate topic-metadata relationship
+
+### k = 20
+```{r}
+cov20<- estimateEffect(1:20 ~ source, selected20,  meta = out$meta, uncertainty = "Global")
+```
+
+```{r}
+plot(cov20, covariate = "source", topics = c(1,2,4,6,7,8,9,10,11,13,14,16,17,19), model = selected20, method = "difference", cov.value1 = "reddit", cov.value2 = "Alzconnected", xlab ="reddit ... Alzconnected", main = "Effect of covariates on topics (K=20)", xlim = c(-.1, .1), labeltype=c("frex"),verbose.labels = F)
+```
+
+### k = 30
+```{r}
+cov30<- estimateEffect(1:30 ~ source, selected30,  meta = out$meta, uncertainty = "Global")
+prep30 <- estimateEffect(1:30 ~ source, fit30,  meta = out$meta, uncertainty = "Global")
+```
+
+```{r}
+summary(cov30, topics=1)
+plot(selected30, type = "summary", xlim = c(0, .3))
+```
+
+```{r}
+out$meta$source <- as.factor(out$meta$source)
+prep <- estimateEffect(1:30 ~ source, selected30,  meta = out$meta, uncertainty = "Global")
 summary(prep, topics=1)
 plot(fit, type = "summary", xlim = c(0, .3))
 ```
 
 ```{r}
-labelTopics(fit,c(1, 2,3,4,5,6,7,8,9,10))
-plot(prep, covariate = "fid", topics = c(1, 2,3,4,5,6,7,8,9,10), model = fit, method = "difference", cov.value1 = "2147806999", cov.value2 = "461", xlab ="LGBT ... Lost", main = "xxx", xlim = c(-.1, .1), labeltype="frex")
+plot(cov30, covariate = "source", topics = c(1,2,4,5,6,13,14,15,16,17,18,21,22,23,25,26,29,30), model = selected30, method = "difference", cov.value1 = "reddit", cov.value2 = "Alzconnected", xlab ="reddit ... Alzconnected", main = "Effect of covariates on topics (K=30)", xlim = c(-.1, .1), labeltype=c("frex"),verbose.labels = F)
 
+# can't display topic names for stm models
+plot(prep30, covariate = "source", topics = c(1, 2,3,4,5,6,7,8,9,10,11,12,13,14,15), model = fit30, method = "difference", cov.value1 = "reddit", cov.value2 = "Alzconnected", xlab ="reddit ... Alzconnected", main = "Effect of covariates on topics (STM, K=30)", xlim = c(-.1, .1), labeltype="frex")
 ```
+
+## topic metadata relationship
+ 
+### k = 20
+
+```{r}
+labelTopics(fit,c(1, 2,3,4,5,6,7,8,9,10,11,12,13,14,15))
+```
+
+### k = 30
 
 ```{r}
 plot(prep,"year", method = "continuous",topic=3, model = fit, printlegend = FALSE)
 ```
 
 ```{r}
-plot(fit, type = "perspectives", topics = 2)
+plot(fit30, type = "perspectives", topics=2)
 ```
+
