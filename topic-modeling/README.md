@@ -6,15 +6,25 @@
 
 Topic Words:
  Topic 1: bleach, poop, pee, flush, diaper, mat, toothbrush, pant, peed, glove 
+
  Topic 2: woke, tramadol, chaplain, rub, asleep, awok, nasal, g-tube, bed, pale 
+
  Topic 3: fluster, wanna, snide, mad, yeah, how, stupid, gonna, whine, selfish 
+
  Topic 4: landlin, password, scammer, scam, voicemail, text, phone, caller, fraud, dial 
+
  Topic 5: headphon, jigsaw, gps, fidget, indoor, solitair, toy, wifi, velcro, garag 
+
  Topic 6: premium, medi-c, oversight, deduct, recruit, waiver, program, webinar, enrol, beneficiari 
+
  Topic 7: oxid, neuron, amyloid, nitrat, httpwwwncbinlmnihgovpubm, peroxynitrit, mutat, receptor, calcium, hippocampus 
+
  Topic 8: licens, passport, landlord, debt, court, polic, attorney, conservatorship, dmv, legal 
+
  Topic 9: fridg, smoke, chew, oatmeal, gag, smoker, cracker, cigarett, caffein, milk 
+
  Topic 10: charl, version, medit, weapon, poem, empow, hymn, persever, gift, glorifi 
+
  Topic 11: fundrais, twitter, film, donat, campaign, podcast, audienc, alzheimer<U+2019>, societi, sponsor 
  Topic 12: grandfath, resourc, grandmoth, caretak, guidanc, onset, advic, fibromyalgia, atlanta, portland 
  Topic 13: facilti, resid, residenti, facil, furnish, staff, reloc, transit, courtyard, tour 
