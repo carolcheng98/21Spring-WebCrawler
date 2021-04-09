@@ -25,7 +25,7 @@ Topic Words:
 
  Topic 10: charl, version, medit, weapon, poem, empow, hymn, persever, gift, glorifi 
 
- Topic 11: fundrais, twitter, film, donat, campaign, podcast, audienc, alzheimer<U+2019>, societi, sponsor 
+ Topic 11: fundrais, twitter, film, donat, campaign, podcast, audienc, alzheimer', societi, sponsor 
 
  Topic 12: grandfath, resourc, grandmoth, caretak, guidanc, onset, advic, fibromyalgia, atlanta, portland 
 
@@ -48,69 +48,134 @@ Topic Words:
 
 
  Covariate Words:
+
  Group Alzconnected: necess, dayi, sooooo, alzdementia, rethink, soi, inout, sharon, oct, agreeabl 
- Group reddit: apologis, tldr, neighbour, grammar, itd, backstori, someone<U+2019>, unwel, dude, grandma
+
+ Group reddit: apologis, tldr, neighbour, grammar, itd, backstori, someone', unwel, dude, grandma
+
+
 
  Topic-Covariate Interactions:
+
  Topic 1, Group Alzconnected: dentist, hoyer, toothpast, bms, comb, rug, dribbl, fold, razor, deterg 
+
  Topic 1, Group reddit: shade, angl, integr, stuf, donepezil, newspap, meat, shepherd, risperd, closet 
 
+
+
  Topic 2, Group Alzconnected: mama, wmama, pammi, wme, nite, deb, tue, lasix, cipro, bronchiti 
+
  Topic 2, Group reddit: warrior, grunt, mutter, downstair, mum, nudg, kitten, flame, aisl, melatonin 
 
+
+
  Topic 3, Group Alzconnected: mommi, thisand, heri, zoo, liar, stink, gina, thisi, fib, fiblet 
- Topic 3, Group reddit: us<U+201D>, treatabl, fuck, <U+2019>ll, don<U+2019>t, grandad, can<U+2019>t, doesn<U+2019>t, couldn<U+2019>t, monster 
+
+ Topic 3, Group reddit: us<U+201D>, treatabl, fuck, 'll, don't, grandad, can't, doesn't, couldn't, monster 
+
+
 
  Topic 4, Group Alzconnected: paye, catalog, zolli, jack, charger, checkbook, sil, chariti, electron, asshol 
+
  Topic 4, Group reddit: cruis, parad, tax, loan, browser, hack, broach, sam, equiti, untreat 
 
+
+
  Topic 5, Group Alzconnected: youtubecoverpicsmallpng, costco, preview, kleenex, byte, dresser, cabinet, lipstick, bra, doll 
+
  Topic 5, Group reddit: song, channel, subscript, dvd, youtub, sing, lyric, razor, pie, smartphon 
 
+
+
  Topic 6, Group Alzconnected: senat, congress, medicar, caringcom, cafe, data, qualif, resuscit, criteria, tailor 
+
  Topic 6, Group reddit: union, side-effect, bachelor, notar, tom, stump, notari, hoyer, amen, luke 
 
+
+
  Topic 7, Group Alzconnected: neuropsychiatr, carotid, side-effect, colonoscopi, neurosci, narcot, pcps, bloodwork, stent, risperidon 
+
  Topic 7, Group reddit: hiccup, breakthrough, pdf, percent, nutriti, worldwid, gum, contractur, bud, meyer 
 
+
+
  Topic 8, Group Alzconnected: dealership, notari, notar, fiduciari, inlaw, tow, hawaiigirl, borrow, hawaii, union 
+
  Topic 8, Group reddit: domest, ampxb, klonopin, mover, qualif, carotid, asshol, pull-up, obedi, filthi 
 
+
+
  Topic 9, Group Alzconnected: eater, meat, sauc, banana, flavor, butter, tomato, sandwich, potato, picki 
+
  Topic 9, Group reddit: dentist, costco, korean, subconsci, nan, crown, fluent, stapl, flashlight, kleenex 
 
+
+
  Topic 10, Group Alzconnected: us<U+201D>, chris, satan, sin, amen, amplifi, humbl, christ, meyer, gospel 
+
  Topic 10, Group reddit: butter, picki, roast, sandwich, peanut, beam, chicken, veggi, fork, snack 
 
- Topic 11, Group Alzconnected: carer, book, contest, sensori, chat, minist, asian, can<U+2019>t, kathi, carol 
+
+
+ Topic 11, Group Alzconnected: carer, book, contest, sensori, chat, minist, asian, can't, kathi, carol 
+
  Topic 11, Group reddit: deepest, uplift, doll, nonprofit, client, remembr, scroll, download, enthusiasm, page 
 
+
+
  Topic 12, Group Alzconnected: stepmoth, stepfath, selfless, nyc, altzheim, distrust, asian, carolina, aphasia, year-old 
- Topic 12, Group reddit: grandmother<U+2019>, jim, karen, implant, ucla, kaiser, subreddit, end--lif, india, gran 
+
+ Topic 12, Group reddit: grandmother', jim, karen, implant, ucla, kaiser, subreddit, end--lif, india, gran 
+
+
 
  Topic 13, Group Alzconnected: alf, ccrc, elop, utah, mover, studio, uproot, acclim, snf, cottag 
+
  Topic 13, Group reddit: sister--law, wrist, hip, captiv, rehabilit, sitter, long-term, confabul, sent, scoot 
 
+
+
  Topic 14, Group Alzconnected: firefox, avatar, download, johanna, thread, stephani, adlo, bela, newcom, iri 
+
  Topic 14, Group reddit: dissert, questionnair, voluntari, survey, conduct, data, ami, project, collabor, outreach 
 
+
+
  Topic 15, Group Alzconnected: pysch, -patient, carolin, hosp, eval, zyprexa, klonopin, afib, remeron, risperdon 
+
  Topic 15, Group reddit: institution, vein, foul, deadbolt, elop, linda, sil, adrenalin, liabl, temp 
 
+
+
  Topic 16, Group Alzconnected: bil, daughter--law, sis, cemeteri, cruis, gma, bachelor, fianc<U+00E9>, sister--law, son 
+
  Topic 16, Group reddit: asian, asshol, cleaner, secretari, christian, seiz, contest, mac, senat, chat 
 
+
+
  Topic 17, Group Alzconnected: youtub, video, channel, train, dvd, greg, class, ami, beam, seri 
+
  Topic 17, Group reddit: son, fianc<U+00E9>, husband, mil, law, bil, farm, mower, fil, razor 
 
+
+
  Topic 18, Group Alzconnected: sos, sitter, fibromyalgia, agenc, housekeep, casework, leas, waiver, laundri, oversight 
+
  Topic 18, Group reddit: poverti, stepfath, amp, charger, dealership, hose, muffin, enforc, golf, restrain 
 
+
+
  Topic 19, Group Alzconnected: poem, momma, singer, gina, song, irish, kin, danc, parad, gift 
+
  Topic 19, Group reddit: grandpa, shitti, mount, victori, solo, athlet, grandpar, indulg, burial, mama 
 
+
+
  Topic 20, Group Alzconnected: mom, alz, gel, stage, mid, believ, mention, pretti, will, progress 
+
  Topic 20, Group reddit: diagnos, hes, ive, doctor, issu, past, els, etc, question, last 
+
+
 
 
 
@@ -118,105 +183,206 @@ Topic Words:
 
 `> labelTopics(selected20, n = 10)`
 
+
+
 Topic 1 Top Words:
+
  	 Highest Prob: said, told, call, ask, got, back, didnt, today, went, took 
+
  	 FREX: told, didnt, said, went, wasnt, yesterday, couldnt, came, got, today 
+
  	 Lift: hadnt, reschedul, wasnt, told, friday, couldnt, saturday, didnt, sheri, saga 
+
  	 Score: said, told, didnt, call, went, got, today, yesterday, ask, back 
+
 Topic 2 Top Words:
+
  	 Highest Prob: mom, dad, sister, brother, want, visit, will, move, home, hous 
+
  	 FREX: dad, mom, brother, sister, trip, sis, thanksgiv, closer, agre, visit 
+
  	 Lift: sis, dad, brother, sister, mom, momi, stepmom, backfir, momsh, bossi 
+
  	 Score: mom, dad, sister, brother, hous, move, visit, home, week, away 
+
 Topic 3 Top Words:
+
  	 Highest Prob: mother, live, year, husband, father, famili, care, parent, old, take 
+
  	 FREX: mother, father, husband, parent, daughter, marri, children, sibl, job, child 
+
  	 Lift: marriag, elementari, homeschool, overbear, son--law, step-fath, year-old, mother--law, father--law, eldest 
+
  	 Score: mother, live, husband, year, father, parent, famili, care, daughter, sibl 
+
 Topic 4 Top Words:
+
  	 Highest Prob: care, pay, will, money, need, state, poa, servic, medic, financi 
+
  	 FREX: attorney, insur, poa, legal, medicaid, financi, pay, medicar, incom, cost 
+
  	 Lift: debt, deduct, fiduciari, guardianship, incom, notar, probat, ssdi, tax, truste 
+
  	 Score: pay, attorney, money, poa, medicaid, financi, medicar, insur, servic, bill 
+
 Topic 5 Top Words:
+
  	 Highest Prob: caregiv, post, one, read, support, famili, will, share, pleas, thank 
+
  	 FREX: site, forum, board, member, thread, post, join, topic, communiti, support 
+
  	 Lift: feil, alzconnect, avatar, browser, byte, firefox, ken, newcom, preview, re-post 
+
  	 Score: caregiv, support, post, group, link, inform, share, member, forum, read 
+
 Topic 6 Top Words:
+
  	 Highest Prob: day, get, time, take, work, night, week, hour, will, tri 
+
  	 FREX: hour, night, day, sleep, work, everi, goe, calm, wake, get 
+
  	 Lift: sundown, daytim, non-stop, hour, rotat, redirect, night, weekday, soooooo, m-f 
+
  	 Score: night, day, sleep, get, hour, week, work, home, tri, time 
+
 Topic 7 Top Words:
- 	 Highest Prob: like, thing, rememb, someth, don<U+2019>t, just, forget, convers, ask, talk 
- 	 FREX: <U+2019>ve, can<U+2019>t, doesn<U+2019>t, don<U+2019>t, mum, didn<U+2019>t, <U+2019>ll, game, <U+2019>re, won<U+2019>t 
- 	 Lift: <U+2019>ll, home<U+201D>, <U+2019>ve, aren<U+2019>t, can<U+2019>t, isn<U+2019>t, won<U+2019>t, wouldn<U+2019>t, <U+201C><U+2019>m, <U+201C>oh 
- 	 Score: don<U+2019>t, <U+2019>ve, can<U+2019>t, doesn<U+2019>t, mum, didn<U+2019>t, rememb, <U+2019>ll, music, <U+2019>re 
+
+ 	 Highest Prob: like, thing, rememb, someth, don't, just, forget, convers, ask, talk 
+
+ 	 FREX: 've, can't, doesn't, don't, mum, didn't, 'll, game, 're, won't 
+
+ 	 Lift: 'll, home<U+201D>, 've, aren't, can't, isn't, won't, wouldn't, <U+201C>'m, <U+201C>oh 
+
+ 	 Score: don't, 've, can't, doesn't, mum, didn't, rememb, 'll, music, 're 
+
 Topic 8 Top Words:
+
  	 Highest Prob: eat, food, use, clean, shower, drink, put, cloth, bathroom, bath 
+
  	 FREX: wash, shower, teeth, drink, eat, diaper, food, toilet, cloth, wet 
+
  	 Lift: bleach, butter, eater, gag, jello, leakag, mash, oatmeal, pasta, peanut 
+
  	 Score: eat, food, shower, drink, cloth, toilet, bathroom, clean, wash, bath 
+
 Topic 9 Top Words:
+
  	 Highest Prob: love, god, will, lord, peac, give, bless, pray, can, one 
+
  	 FREX: god, lord, jesus, spirit, faith, pray, prayer, peac, bless, joy 
- 	 Lift: humbl, jesus<U+2019>, philippian, proverb, sin, chris, christ, discipl, faith, glori 
+
+ 	 Lift: humbl, jesus', philippian, proverb, sin, chris, christ, discipl, faith, glori 
+
  	 Score: lord, god, jesus, niv, psalm, pray, love, peac, faith, bless 
+
 Topic 10 Top Words:
- 	 Highest Prob: alzheim, diseas, patient, dementia, research, brain, may, peopl, alzheimer<U+2019>, studi 
+
+ 	 Highest Prob: alzheim, diseas, patient, dementia, research, brain, may, peopl, alzheimer', studi 
+
  	 FREX: research, amyloid, associ, trial, sourc, studi, oil, factor, cure, individu 
+
  	 Lift: abstract, ada, aromatherapi, beta, clove, compound, eugenol, experiment, ferul, gene 
- 	 Score: alzheim, studi, amyloid, alzheimer<U+2019>, research, peroxynitrit, diseas, oxid, ginseng, neuron 
+
+ 	 Score: alzheim, studi, amyloid, alzheimer', research, peroxynitrit, diseas, oxid, ginseng, neuron 
+
 Topic 11 Top Words:
+
  	 Highest Prob: walk, bed, room, sit, back, look, eye, fall, put, hand 
+
  	 FREX: mama, chair, bed, sit, floor, cat, woke, deb, walk, asleep 
+
  	 Lift: wme, mama, nite, pammi, scoot, wmama, wher, tonit, den, reclin 
+
  	 Score: bed, room, mama, walk, sit, chair, floor, door, deb, walker 
+
 Topic 12 Top Words:
+
  	 Highest Prob: just, know, dont, want, think, like, get, say, thing, cant 
+
  	 FREX: dont, cant, doesnt, shes, hes, isnt, wont, say, that, ive 
+
  	 Lift: herbut, dont, pester, cant, itll, hes, shell, isnt, what, theyll 
+
  	 Score: shes, dont, doesnt, cant, just, hes, know, say, tell, thing 
+
 Topic 13 Top Words:
+
  	 Highest Prob: care, home, nurs, facil, move, place, live, assist, visit, need 
+
  	 FREX: facil, staff, resid, nurs, rehab, alf, assist, unit, place, adjust 
+
  	 Lift: resid, ccrc, staff, facilti, lpn, turnov, alf, facil, staffer, understaf 
+
  	 Score: facil, nurs, home, care, staff, resid, move, assist, unit, hospic 
+
 Topic 14 Top Words:
+
  	 Highest Prob: anyon, stage, thank, alzheim, advic, recent, much, appreci, earli, grandmoth 
+
  	 FREX: grandmoth, advic, appreci, anyon, stage, recent, earli, aunt, grandfath, advanc 
+
  	 Lift: grandmoth, grandfath, uncl, subreddit, dimentia, matern, grandpar, appreci, mid-stag, advic 
+
  	 Score: grandmoth, anyon, alzheim, stage, advic, appreci, grandfath, aunt, thank, recent 
+
 Topic 15 Top Words:
+
  	 Highest Prob: drive, phone, call, hous, car, mil, get, one, away, door 
+
  	 FREX: car, polic, fil, card, accus, shop, drive, steal, mil, mail 
+
  	 Lift: wallet, dealership, furnac, landlin, polic, caller, uber, fil, unplug, dmv 
+
  	 Score: drive, car, phone, mil, hous, call, polic, key, card, door 
+
 Topic 16 Top Words:
+
  	 Highest Prob: med, hospit, medic, doctor, pain, week, also, hospic, blood, uti 
+
  	 FREX: uti, seroquel, antibiot, seizur, hallucin, med, surgeri, namenda, psychiatrist, aricept 
+
  	 Lift: exelon, paxil, potassium, anesthesia, nausea, zyprexa, abilifi, anemia, antibiot, atrial 
+
  	 Score: med, hospit, uti, doctor, medic, hospic, blood, pain, dose, seroquel 
+
 Topic 17 Top Words:
+
  	 Highest Prob: year, dementia, doctor, ago, diagnos, memori, month, diagnosi, test, declin 
+
  	 FREX: diagnosi, neurologist, loss, appoint, diagnos, declin, vascular, test, sign, stroke 
+
  	 Lift: neuro-psych, neuropsych, mri, laps, tbi, vascular, tia, diagnosi, bipolar, shrinkag 
+
  	 Score: doctor, diagnos, year, diagnosi, dementia, neurologist, test, memori, symptom, ago 
+
 Topic 18 Top Words:
+
  	 Highest Prob: feel, time, much, life, just, know, see, love, now, one 
+
  	 FREX: feel, happi, sad, die, cri, guilti, christma, pass, hard, horribl 
+
  	 Lift: gina, griev, hardest, momma, guilti, pam, bittersweet, surreal, sad, crappi 
+
  	 Score: feel, life, cri, sad, love, happi, pass, die, diseas, hard 
+
 Topic 19 Top Words:
+
  	 Highest Prob: hous, around, grandma, start, stuff, dog, outsid, yell, like, one 
+
  	 FREX: grandma, dog, grandpa, stuff, guy, yell, liter, window, yard, babi 
+
  	 Lift: bark, grandpa, doll, dog, grandma, putter, cigarett, backyard, golf, asshol 
+
  	 Score: grandma, dog, hous, grandpa, stuff, yell, guy, around, outsid, window 
+
 Topic 20 Top Words:
+
  	 Highest Prob: can, help, person, need, someon, way, becom, tri, chang, deal 
+
  	 FREX: becom, person, verbal, anger, deal, communic, frustrat, someon, abus, difficult 
+
  	 Lift: verbal, introvert, clueless, react, rage, hostil, logic, dealt, lash, disagre 
+
  	 Score: help, person, can, becom, deal, problem, behavior, suggest, someon, issu 
 
 
@@ -246,7 +412,7 @@ Topic Words:
 
  Topic 10: medit, version, fruit, strive, translat, enemi, poem, marvel, merci, creation 
 
- Topic 11: twitter, mother<U+2019>, custom, outfit, gentleman, inventori, mexico, chemic, weather, escort 
+ Topic 11: twitter, mother', custom, outfit, gentleman, inventori, mexico, chemic, weather, escort 
 
  Topic 12: resourc, caretak, pointer, grandmoth, guidanc, advic, toll, volatil, mother--law, appreci 
 
@@ -289,98 +455,191 @@ Topic Words:
 
 
  Covariate Words:
+
  Group Alzconnected: sooooo, fabul, alzdementia, auction, rear, againi, buck, soooooo, resum, sharon 
+
  Group reddit: apologis, tldr, sixti, backstori, grammar, unwel, prefac, bullshit, morbid, commiser 
 
+
+
  Topic-Covariate Interactions:
+
  Topic 1, Group Alzconnected: deterg, comb, hair, hoyer, itch, launder, cotton, glove, dribbl, walk- 
+
  Topic 1, Group reddit: toothbrush, dentist, tooth, dentur, scold, rose, sweep, angl, stuf, knob 
 
+
+
  Topic 2, Group Alzconnected: mama, pammi, wmama, tue, wme, nite, deb, tonit, sht, bronchiti 
+
  Topic 2, Group reddit: mum, deterg, slid, warrior, kitten, nudg, grunt, trainer, coat, departur 
 
+
+
  Topic 3, Group Alzconnected: gina, momma, thisand, snarki, blurt, zoo, bye, yea, shell, himi 
- Topic 3, Group reddit: won<U+2019>t, doesn<U+2019>t, don<U+2019>t, can<U+2019>t, <U+2019>ll, <U+201C>don<U+2019>t, wouldn<U+2019>t, <U+2019>ve, <U+2019>re, couldn<U+2019>t 
+
+ Topic 3, Group reddit: won't, doesn't, don't, can't, 'll, <U+201C>don't, wouldn't, 've, 're, couldn't 
+
+
 
  Topic 4, Group Alzconnected: realtor, sil, catalog, mil, blah, bil, paye, wallet, dhs, solicit 
+
  Topic 4, Group reddit: parad, equiti, tax, bankruptci, ticket, savvi, ira, hardwar, hack, gift 
 
+
+
  Topic 5, Group Alzconnected: wooden, blous, bulb, doll, deadbolt, polish, lipstick, knob, coat, curtain 
+
  Topic 5, Group reddit: song, clap, danc, lyric, youtub, singer, sing, ken, mug, dvd 
 
+
+
  Topic 6, Group Alzconnected: deduct, ombudsman, criteria, oversight, regul, certifi, shortag, wage, lpn, housebound 
+
  Topic 6, Group reddit: scoot, acct, institution, weed, economi, wealth, worthi, bankruptci, eastern, theft 
 
+
+
  Topic 7, Group Alzconnected: neuropsychiatr, neuropsych, neurosci, tumor, recurr, psychiatri, retest, remiss, carotid, inventori 
+
  Topic 7, Group reddit: bud, pdf, worldwid, hiccup, nutriti, meyer, gum, simultan, breakthrough, potassium 
 
+
+
  Topic 8, Group Alzconnected: bankruptci, fraud, hipaa, fiduciari, surrog, tax, loan, planner, princip, asset 
+
  Topic 8, Group reddit: ampxb, checklist, oversight, luke, obedi, impuls, stump, bias, frontotempor, cruis 
 
+
+
  Topic 9, Group Alzconnected: jello, potato, meat, veggi, sauc, carrot, onion, smoothi, peanut, tomato 
+
  Topic 9, Group reddit: nan, korea, crown, granni, mow, korean, wooden, dental, toothpast, viral 
 
+
+
  Topic 10, Group Alzconnected: sin, luke, meyer, obedi, glori, worthi, chris, matthew, creator, us<U+201D> 
+
  Topic 10, Group reddit: butter, donut, pasta, veggi, peanut, pie, banana, candl, roast, bacon 
 
+
+
  Topic 11, Group Alzconnected: cruis, portland, travel, ticket, mug, west, flight, trip, coast, plane 
+
  Topic 11, Group reddit: velcro, dye, dress, drawer, closur, shoe, shirt, hair, dresser, sock 
 
+
+
  Topic 12, Group Alzconnected: himi, distrust, checklist, altzheim, stepmoth, onset, moder, houston, care-giv, stepfath 
- Topic 12, Group reddit: jim, grandmother<U+2019>, karen, implant, planner, hha, portland, grandpar, helper, sue 
+
+ Topic 12, Group reddit: jim, grandmother', karen, implant, planner, hha, portland, grandpar, helper, sue 
+
+
 
  Topic 13, Group Alzconnected: alf, acclim, placement, director, studio, turnov, staf, mcf, cottag, snf 
+
  Topic 13, Group reddit: hip, surrog, hoyer, rehabilit, sitter, wrist, bound, wheelchair, lift, walker 
 
+
+
  Topic 14, Group Alzconnected: slid, wobbl, bms, wheelchair, gait, bandag, scoot, leg, unsteadi, velcro 
+
  Topic 14, Group reddit: bulb, flashlight, highway, deadbolt, neighbour, thermostat, wallet, wooden, neighbor, lane 
 
+
+
  Topic 15, Group Alzconnected: hematoma, hip, cathet, transfus, ambul, antibiot, geri-psych, compress, fever, snf 
- Topic 15, Group reddit: seizur, wife<U+2019>, fil, mil, diuret, groggi, maid, psychot, chair, razor 
+
+ Topic 15, Group reddit: seizur, wife', fil, mil, diuret, groggi, maid, psychot, chair, razor 
+
+
 
  Topic 16, Group Alzconnected: homeschool, niec, estrang, granni, daughter--law, grandpa, cemeteri, grandma, sis, gram 
+
  Topic 16, Group reddit: charl, portland, asshol, life<U+201D>, senat, photo, grandbabi, coast, transform, shovel 
 
+
+
  Topic 17, Group Alzconnected: joe, youtub, video, dvd, helper, exercis, seminar, florida, naomi, feil 
+
  Topic 17, Group reddit: fianc<U+00E9>, casino, gambl, horribl, ftd, suck, western, part, hasnt, orang 
 
+
+
  Topic 18, Group Alzconnected: hha, sitter, agenc, solo, -home, sib, mover, caretak, interview, thur 
+
  Topic 18, Group reddit: dealership, shelter, plane, camper, shortag, stepfath, ticket, boyfriend, suitcas, gram 
 
- Topic 19, Group Alzconnected: singer, poem, parad, irish, sunset, sang, <U+201C><U+2019>m, tart, song, goodi 
+
+
+ Topic 19, Group Alzconnected: singer, poem, parad, irish, sunset, sang, <U+201C>'m, tart, song, goodi 
+
  Topic 19, Group reddit: grandpa, cruis, mortal, onion, museum, chris, spiritu, grandpar, mama, faith 
 
+
+
  Topic 20, Group Alzconnected: vicodin, ulcer, haldol, lasix, hosp, prop, shingl, buttock, suppositori, potassium 
+
  Topic 20, Group reddit: pill, polish, pointless, programm, soo, sauc, snore, incontin, earliest, dispens 
 
+
+
  Topic 21, Group Alzconnected: slump, toothbrush, dentist, dentur, tooth, crown, gum, toothpast, magg, teeth 
+
  Topic 21, Group reddit: india, german, memori, trauma, recognis, twin, urinalysi, task, cognit, term 
 
- Topic 22, Group Alzconnected: jane, wife<U+2019>, wife, kin, macular, digit, reunion, upload, departur, diego 
+
+
+ Topic 22, Group Alzconnected: jane, wife', wife, kin, macular, digit, reunion, upload, departur, diego 
+
  Topic 22, Group reddit: amp, unsupervis, snarki, charger, irish, confront, realtor, subconsci, humili, muffin 
 
+
+
  Topic 23, Group Alzconnected: firefox, re-post, avatar, brows, zolli, profil, bela, pam, newcom, site 
+
  Topic 23, Group reddit: ralzheim, subreddit, onset, sub, basebal, reddit, weapon, shade, earli, stage 
 
+
+
  Topic 24, Group Alzconnected: dealership, dmv, car, charger, truck, polic, driver, garag, revok, drive 
+
  Topic 24, Group reddit: overthink, carrot, earnest, blurt, blah, joe, dictionari, niec, proclaim, ex-husband 
 
+
+
  Topic 25, Group Alzconnected: trainer, stuf, shelter, glow, knot, rug, south, carolina, section, allerg 
+
  Topic 25, Group reddit: nana, fat, guitar, hose, timer, boomer, charl, overweight, chocol, defec 
 
+
+
  Topic 26, Group Alzconnected: senat, ken, youtubecoverpicsmallpng, michael, byte, pdf, newslett, worldwid, boomer, committe 
+
  Topic 26, Group reddit: user, reminisc, elig, ralzheim, softwar, digit, autom, enthusiasm, server, diagnost 
 
+
+
  Topic 27, Group Alzconnected: closur, griev, roller, coaster, heartach, fianc<U+00E9>, nurtur, nana, hardest, sorrow 
+
  Topic 27, Group reddit: asshol, comb, childish, kaiser, acclim, dhs, peg, sail, rape, estrang 
 
+
+
  Topic 28, Group Alzconnected: korea, hed, man, fog, recept, laps, hes, brother, alz, dad 
+
  Topic 28, Group reddit: mom, retir, leaf, concuss, isnt, hes, bad, alway, friend, dad 
 
+
+
  Topic 29, Group Alzconnected: risperdon, geri, keppra, namenda, carolin, ambien, aspirin, nausea, bloodwork, cipro 
+
  Topic 29, Group reddit: mri, dmv, hipaa, coke, retest, neurosurgeon, tumor, mini-ment, schizophrenia, esophagus 
 
+
+
  Topic 30, Group Alzconnected: preview, episod, journey, upcom, snippet, alz, mom, husband, last, will 
+
  Topic 30, Group reddit:  
 
 ## selected30: modelSelect, K = 30
@@ -429,13 +688,13 @@ Topic 4 Top Words:
 
 Topic 5 Top Words:
 
- 	 Highest Prob: don<U+2019>t, know, just, <U+2019>ve, can<U+2019>t, rememb, doesn<U+2019>t, thing, think, mum 
+ 	 Highest Prob: don't, know, just, 've, can't, rememb, doesn't, thing, think, mum 
 
- 	 FREX: don<U+2019>t, <U+2019>ve, can<U+2019>t, doesn<U+2019>t, didn<U+2019>t, <U+2019>re, <U+2019>ll, won<U+2019>t, mum, isn<U+2019>t 
+ 	 FREX: don't, 've, can't, doesn't, didn't, 're, 'll, won't, mum, isn't 
 
- 	 Lift: <U+2019>ll, <U+2019>re, <U+2019>ve, <U+201C>well, aren<U+2019>t, can<U+2019>t, home<U+201D>, husband<U+2019>, isn<U+2019>t, nan 
+ 	 Lift: 'll, 're, 've, <U+201C>well, aren't, can't, home<U+201D>, husband', isn't, nan 
 
- 	 Score: don<U+2019>t, <U+2019>ve, can<U+2019>t, doesn<U+2019>t, alzheimer<U+2019>, didn<U+2019>t, <U+2019>ll, mum, <U+2019>re, won<U+2019>t 
+ 	 Score: don't, 've, can't, doesn't, alzheimer', didn't, 'll, mum, 're, won't 
 
 Topic 6 Top Words:
 
@@ -629,13 +888,13 @@ Topic 24 Top Words:
 
 Topic 25 Top Words:
 
- 	 Highest Prob: alzheim, diseas, patient, research, brain, studi, may, link, alzheimer<U+2019>, effect 
+ 	 Highest Prob: alzheim, diseas, patient, research, brain, studi, may, link, alzheimer', effect 
 
  	 FREX: link, research, survey, amyloid, articl, studi, trial, oil, app, gene 
 
  	 Lift: abstract, aromatherapi, beta, clove, eugenol, ferul, gene, httpwwwncbinlmnihgovpubm, mutat, neuron 
 
- 	 Score: alzheim, alzheimer<U+2019>, studi, amyloid, diseas, peroxynitrit, link, research, oxid, ginseng 
+ 	 Score: alzheim, alzheimer', studi, amyloid, diseas, peroxynitrit, link, research, oxid, ginseng 
 
 Topic 26 Top Words:
 
