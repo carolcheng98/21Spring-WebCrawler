@@ -1,8 +1,6 @@
 # Topic Modeling (0330 Models)
 
-- [fit: stm, K = 20](##fit: stm, K = 20)
 
-- [selected20: modelSelect, K = 20](##selected20: modelSelect, K = 20)
 
 ## fit: stm, K = 20
 
