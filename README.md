@@ -1,6 +1,7 @@
-<Center><h3>Topic Modeling and Sentimental Analysis of Alzheimer's Caregivers on Online Forums</h3>
-  <strong>Progress Report</strong>
-<br>CS 3891 <br>Carol (Kerou) Cheng</Center>
+
+
+# Topic Modeling and Sentimental Analysis of Alzheimer's Caregivers on Online Forums
+
 
 ### Progress
 
@@ -24,7 +25,7 @@
 
   - <u>Number of topics (K)</u>: we did a search on K with values = c(6,8,10,11,12,14,16,18,20,30), the diagonostic statistics is as followed:
 
-    <img src="/Users/carolcheng/Library/Application Support/typora-user-images/image-20210401025401697.png" alt="image-20210401025401697" style="zoom:30%;" />
+    <img src="topic-modeling/plots/searchk-with-exclus-0330.png" alt="image-20210401025401697" style="zoom:70%;" />
 
     The larger K is, the lower semantic coherence and the higher the exclusivity a model has. We trained one model for K = 20 and one for K = 30.
 
@@ -34,28 +35,28 @@
 
       - Candidate models diagnostic statistics after `selectModel()`: we selected model 3 for higher exclusivity for further exploration
 
-        <Center><img src="/Users/carolcheng/Library/Application Support/typora-user-images/image-20210401030849949.png" alt="image-20210401030849949" style="zoom:30%;" /></Center>	
+        <Center><img src="topic-modeling/plots/modelselect-20-0330.png" alt="image-20210401030849949" style="zoom:70%;" /></Center>	
 
       - Expected topic proportions for model 3:
 
-        <Center><img src="/Users/carolcheng/Library/Application Support/typora-user-images/image-20210331233025512.png" alt="image-20210331233025512" style="zoom:30%;" /></Center>
+        <Center><img src="topic-modeling/plots/topic-selectmodel2-20-0330.png" alt="image-20210401030849949" style="zoom:70%;" /></Center>	
 
       - Expected topic proportions for model with `stm()`:
 
-    <Center><img src="/Users/carolcheng/Library/Application Support/typora-user-images/image-20210331233127365.png" alt="image-20210331233127365" style="zoom:30%;" /></Center>
+    <Center><img src="topic-modeling/plots/topic-stm-20-0330.png" alt="image-20210401030849949" style="zoom:70%;" /></Center>	
 
     - K = 30
       - Candidate models diagnostic statistics after `selectModel()`: we selected model 2 for higher exclusivity for further exploration
 
-    <Center><img src="/Users/carolcheng/Library/Application Support/typora-user-images/image-20210401024104398.png" alt="image-20210401024104398" style="zoom:30%;" /></Center>
+    <Center><img src="topic-modeling/plots/modelselect-30-0330.png" alt="image-20210401030849949" style="zoom:70%;" /></Center>	
 
     - Expected topic proportions for model 2:
 
-    <Center><img src="/Users/carolcheng/Library/Application Support/typora-user-images/image-20210401120102748.png" alt="image-20210401120102748" style="zoom:30%;" /></Center>
+    <Center><img src="topic-modeling/plots/topic-stm-30-0330.png" alt="image-20210401030849949" style="zoom:70%;" /></Center>	
 
     - Expected topic proportions for model with `stm()`:
 
-      <Center><img src="/Users/carolcheng/Library/Application Support/typora-user-images/image-20210401135435629.png" alt="image-20210401135435629" style="zoom:65%;" /></Center>
+      <Center><img src="topic-modeling/plots/topic-stm-30-0330.png" alt="image-20210401030849949" style="zoom:70%;" /></Center>	
 
   - <u>Topic-metadata correlation</u>
 
@@ -63,41 +64,35 @@
 
       - visualization of some topic words by source:
 
-        <img src="/Users/carolcheng/Library/Application Support/typora-user-images/image-20210401144833358.png" alt="image-20210401144833358" style="zoom: 40%;" /><img src="/Users/carolcheng/Library/Application Support/typora-user-images/image-20210401144948693.png" alt="image-20210401144948693" style="zoom:40%;" />    
+        <Center><img src="topic-modeling/plots/20-t7.png" alt="image-20210401030849949" style="zoom:70%;" /></Center>	 
 
-        <img src="/Users/carolcheng/Library/Application Support/typora-user-images/image-20210401145112237.png" alt="image-20210401145112237" style="zoom: 37%;" /><img src="/Users/carolcheng/Library/Application Support/typora-user-images/image-20210401145212868.png" alt="image-20210401145212868" style="zoom:37%;" /> 
+        <Center><img src="topic-modeling/plots/20-t10.png" alt="image-20210401030849949" style="zoom:70%;" /></Center>	 
+
+        <Center><img src="topic-modeling/plots/20-t11.png" alt="image-20210401030849949" style="zoom:70%;" /></Center>	 
+
+      <Center><img src="topic-modeling/plots/20-t14.png" alt="image-20210401030849949" style="zoom:70%;" /></Center>	 
 
       - Effect of covariates on topics
 
-      <img src="/Users/carolcheng/Library/Application Support/typora-user-images/image-20210401140431697.png" alt="image-20210401140431697" style="zoom:60%;" />
+      <Center><img src="topic-modeling/plots/covariate-20-0330.png" alt="image-20210401030849949" style="zoom:70%;" /></Center>	
 
     - k = 30
 
       - Visualization of some topic words by source:
 
-        <img src="/Users/carolcheng/Library/Application Support/typora-user-images/image-20210401145710527.png" alt="image-20210401145710527" style="zoom:35%;" /><img src="/Users/carolcheng/Library/Application Support/typora-user-images/image-20210401144249342.png" alt="image-20210401144249342" style="zoom:35%;" /><img src="/Users/carolcheng/Library/Application Support/typora-user-images/image-20210401144507110.png" alt="image-20210401144507110" style="zoom: 35%;" /><img src="/Users/carolcheng/Library/Application Support/typora-user-images/image-20210401144557935.png" alt="image-20210401144557935" style="zoom:35%;" />
-
-        
-
-      - Effect of covariates on topics:
-
-  <img src="/Users/carolcheng/Library/Application Support/typora-user-images/image-20210401141705518.png" alt="image-20210401141705518" style="zoom:100%;" />
-
+        <Center><img src="topic-modeling/plots/30-t1.png" alt="image-20210401030849949" style="zoom:70%;" /></Center>	 
   
-
-### Problems
-
-- model selection:
-  - the output topics vary a lot even when K is consistent by the functions used. Which one produces a better model?
-
-- model interpretation: 
-  - how to interpret the topics after getting the topic keywords? Do we summarize them using our intuition?
-- unbalanced data:
-  - Would the imbalanced data size affect model performance? Right now we only have around 9000 reddit posts, but if we use all of the forums data on alzconnected.org, there will be more than 40,000 posts in the end. (Right now we are only using the data from one caregiver forum)
-
-### Backup Plan
-
-- Gensim package
+        <Center><img src="topic-modeling/plots/30-t20.png" alt="image-20210401030849949" style="zoom:70%;" /></Center>	 
+  
+      <Center><img src="topic-modeling/plots/30-t25.png" alt="image-20210401030849949" style="zoom:70%;" /></Center>	 
+      
+      <Center><img src="topic-modeling/plots/30-t26.png" alt="image-20210401030849949" style="zoom:70%;" /></Center>	 
+      
+      - Effect of covariates on topics:
+  
+  <Center><img src="topic-modeling/plots/covariate2-30-0330.png" alt="image-20210401030849949" style="zoom:70%;" /></Center>	
+  
+  
 
 ### Timeline
 
