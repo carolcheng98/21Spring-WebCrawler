@@ -12,6 +12,7 @@ knitr::opts_chunk$set(echo = TRUE)
 library(stm)
 library(ggplot2)
 library(tidyverse)
+library(wordcloud)
 ```
 
 ## Preprocess dataset
@@ -23,7 +24,6 @@ docs <- out$documents
 vocab <- out$vocab
 meta <-out$meta
 ```
-
 ## search K
 ```{r}
 storage <- searchK(out$documents, out$vocab, K = c(6,8,10,11,12,14,16,18,20,30), prevalence =~ source, data = meta)
@@ -89,6 +89,94 @@ sageLabels(selected30)
 ```{r}
 plot(selected30)
 ```
+
+## representative documents
+k=20
+```{r}
+lst20 <- c(1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20)
+thoughts_fit <- findThoughts(fit, texts = out$meta$p_content, topics=lst20) 
+fit_topics<-labelTopics(fit, n = 10)[[1]]
+thoughts_s20 <- findThoughts(selected20, texts = out$meta$p_content, topics=lst20) 
+select_topics<-labelTopics(selected20, n = 10)[[1]]
+
+for (i in 1:20){
+  #fit
+  topic_fit = paste("Topic",i,":",fit_topics[i,1],fit_topics[i,2],fit_topics[i,3],fit_topics[i,4],fit_topics[i,5],fit_topics[i,6],fit_topics[i,7],fit_topics[i,8], sep=" ")
+  
+  file_name = paste("documents-plots/stm-20/",i,".png",sep="")
+  png(file_name,width = 960, height = 960, units = "px")
+  plotQuote(thoughts_fit$docs[[i]],width=70,maxwidth = 750,main=topic_fit,text.cex=1.5)
+  dev.off()
+  
+  # select20
+  topic_select20 = paste("Topic",i,":",select_topics[i,1],select_topics[i,2],select_topics[i,3],select_topics[i,4],select_topics[i,5],select_topics[i,6],select_topics[i,7],select_topics[i,8], sep=" ")
+  file_name = paste("documents-plots/select-20/",i,".png",sep="")
+  png(file_name,width = 960, height = 960, units = "px")
+  plotQuote(thoughts_s20$docs[[i]],width=70,maxwidth = 750,main=topic_select20,text.cex=1.5)
+  dev.off()
+}
+```
+
+
+k=30
+```{r}
+lst30 <- c(1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30)
+thoughts_fit30 <- findThoughts(fit30, texts = out$meta$p_content, topics=lst30) 
+fit_topics30<-labelTopics(fit30, n = 10)[[1]]
+thoughts_s30 <- findThoughts(selected30, texts = out$meta$p_content, topics=lst30) 
+select_topics30<-labelTopics(selected30, n = 10)[[1]]
+
+for (i in 1:30){
+  #fit30
+  topic_fit30 = paste("Topic",i,":",fit_topics30[i,1],fit_topics30[i,2],fit_topics30[i,3],fit_topics30[i,4],fit_topics30[i,5],fit_topics30[i,6],fit_topics30[i,7],fit_topics30[i,8], sep=" ")
+  
+  file_name = paste("documents-plots/stm-30/",i,".png",sep="")
+  png(file_name,width = 960, height = 960, units = "px")
+  plotQuote(thoughts_fit30$docs[[i]],width=70,maxwidth = 750,main=topic_fit30,text.cex=1.5)
+  dev.off()
+  
+  # select20
+  topic_select30 = paste("Topic",i,":",select_topics30[i,1],select_topics30[i,2],select_topics30[i,3],select_topics30[i,4],select_topics30[i,5],select_topics30[i,6],select_topics30[i,7],select_topics30[i,8], sep=" ")
+  file_name = paste("documents-plots/select-30/",i,".png",sep="")
+  png(file_name,width = 960, height = 960, units = "px")
+  plotQuote(thoughts_s30$docs[[i]],width=70,maxwidth = 750,main=topic_select30,text.cex=1.5)
+  dev.off()
+}
+```
+
+```{r}
+# word cloud
+
+for (i in 1:30){
+  # stm-30
+  file_name = paste("wordcloud-plots/stm-30/",i,".png",sep="")
+  png(file_name,width = 960, height =960,res=150, units = "px")
+  cloud(fit30,topic=i)
+  dev.off()
+  
+  # selected-30
+  file_name = paste("wordcloud-plots/selected-30/",i,".png",sep="")
+  png(file_name,width = 960, height =960,res=150, units = "px")
+  cloud(selected30,topic=i)
+  dev.off()
+}
+
+for (i in 1:20){
+  # stm-20
+  file_name = paste("wordcloud-plots/stm-20/",i,".png",sep="")
+  png(file_name,width = 960, height =960,res=150, units = "px")
+  cloud(fit,topic=i)
+  dev.off()
+  
+  # selected-20
+  file_name = paste("wordcloud-plots/selected-20/",i,".png",sep="")
+  png(file_name,width = 960, height =960,res=150, units = "px")
+  cloud(selected20,topic=i)
+  dev.off()
+}
+
+```
+
 ## Estimate topic-metadata relationship
 
 ### k = 20
@@ -119,11 +207,14 @@ plot(fit, type = "summary", xlim = c(0, .3))
 ```
 
 ```{r}
+# covariance plot
+
 plot(cov30, covariate = "source", topics = c(1,2,4,5,6,13,14,15,16,17,18,21,22,23,25,26,29,30), model = selected30, method = "difference", cov.value1 = "reddit", cov.value2 = "Alzconnected", xlab ="reddit ... Alzconnected", main = "Effect of covariates on topics (K=30)", xlim = c(-.1, .1), labeltype=c("frex"),verbose.labels = F)
 
 # can't display topic names for stm models
 plot(prep30, covariate = "source", topics = c(1, 2,3,4,5,6,7,8,9,10,11,12,13,14,15), model = fit30, method = "difference", cov.value1 = "reddit", cov.value2 = "Alzconnected", xlab ="reddit ... Alzconnected", main = "Effect of covariates on topics (STM, K=30)", xlim = c(-.1, .1), labeltype="frex")
 ```
+
 
 ## topic metadata relationship
  

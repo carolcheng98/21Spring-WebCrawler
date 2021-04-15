@@ -2,8 +2,18 @@
 
 # Topic Modeling and Sentimental Analysis of Alzheimer's Caregivers on Online Forums
 
+### 0415 - Update
 
-### Progress
+- built a [shiny app dashboard](https://carol-cheng-98.shinyapps.io/alzheimers-topic-modeling/) for futher exploration
+  - add representative documents for each topic
+  - add wordcloud of topic words for each topic
+
+- to do: 
+  - add topic-metadata relationship section to the dashboard
+  - ? overall topics and covariate topics not consistent
+  - ? stm vs select
+
+### 0330 - Progress report
 
 - **Dataset**: the data was scraped from alzconnected.org and reddit. Up until now, we have only explore the initial posts on the forums. The documents were the <u>content</u> of the posts, and the metadata was the <u>source</u> (reddit/alzconnected) of the posts, and the <u>date</u> of the posts.
 
