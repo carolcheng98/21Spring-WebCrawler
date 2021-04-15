@@ -9,7 +9,7 @@ shinyServer(function(input, output) {
 
     output$docImg <- renderImage({
       docpath <- paste("plots/documents-plots/",model(),"/",topic(),".png",sep="")
-      list(src=docpath,width=540,height=540)
+      list(src=docpath,width=600,height=600)
     },deleteFile = FALSE)
     
     output$wcImg <- renderImage({
