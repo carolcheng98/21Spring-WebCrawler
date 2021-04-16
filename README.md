@@ -7,9 +7,9 @@
 - built a [shiny app dashboard](https://carol-cheng-98.shinyapps.io/alzheimers-topic-modeling/) for futher exploration
   - add representative documents for each topic
   - add wordcloud of topic words for each topic
+  - add topic-forum plots for all topics
 
 - to do: 
-  - add topic-metadata relationship section to the dashboard
   - ? overall topics and covariate topics not consistent
   - ? stm vs select
 

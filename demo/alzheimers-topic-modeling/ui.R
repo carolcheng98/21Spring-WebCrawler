@@ -10,12 +10,12 @@ shinyUI(fluidPage(
   hr(),
   
   # fluid row for inputs
-  fluidRow(
-    column(4,
+  fluidRow(align="center",
+    column(5,
       selectInput("model", "Choose a model:",
                   choices = list("stm-20","stm-30","selected-20","selected-30"))
     ),
-    column(5,
+    column(6,
       sliderInput("topic",
                    "Topic number: ",
                    min = 1,
@@ -30,19 +30,20 @@ shinyUI(fluidPage(
     column(4,
       h4("All Topics"),
       br(),
-      imageOutput(outputId="allTopics")),
+      imageOutput(outputId="allTopics"),
+      br(),
+      imageOutput(outputId="covariate")),
     column(5,
       h4("Representative documents for this topic:"),
       br(),
       imageOutput(outputId="docImg")),
     column(3,
       h4("Wordcloud for topic words: "),
-      br(),
-      imageOutput(outputId="wcImg"))
+      imageOutput(outputId="wcImg"),
+      h4("Topic-Forum Relationship:"),
+      imageOutput(outputId="topicMeta"))
 
-    
-      
-    
+
   )
 
   

@@ -19,7 +19,17 @@ shinyServer(function(input, output) {
     
     output$allTopics <- renderImage({
       docpath <- paste("plots/topic/",model(),".png",sep="")
-      list(src=docpath,width=480,height=480)
+      list(src=docpath,width=480,height=450)
+    },deleteFile = FALSE)
+    
+    output$topicMeta <- renderImage({
+      docpath <- paste("plots/topic-meta/",model(),"/",topic(),".png",sep="")
+      list(src=docpath,width=360,height=360)
+    },deleteFile = FALSE)
+    
+    output$covariate <- renderImage({
+      docpath <- paste("plots/topic-covariate/",model(),".png",sep="")
+      list(src=docpath,width=480, heiht="auto")
     },deleteFile = FALSE)
   
 })
