@@ -5,9 +5,9 @@ account: carol-cheng-98
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 3974510
-bundleId: 4478825
+bundleId: 4534084
 url: https://carol-cheng-98.shinyapps.io/alzheimers-topic-modeling/
-when: 1618554543.92666
-lastSyncTime: 1618554543.92668
+when: 1619682307.53402
+lastSyncTime: 1619682307.53403
 asMultiple: FALSE
 asStatic: FALSE

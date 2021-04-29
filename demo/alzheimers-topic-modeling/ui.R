@@ -13,7 +13,7 @@ shinyUI(fluidPage(
   fluidRow(align="center",
     column(5,
       selectInput("model", "Choose a model:",
-                  choices = list("stm-20","stm-30","selected-20","selected-30"))
+                  choices = list("stm-30","stm-20","selected-30","selected-20"))
     ),
     column(6,
       sliderInput("topic",
